@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jdfs.BlackJack.Api", "Jdfs.BlackJack.Api\Jdfs.BlackJack.Api.csproj", "{C36CF7A2-EEE5-4DC2-A698-FCA395241926}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jdfs.BlackJack.Test", "Jdfs.BlackJack.Test\Jdfs.BlackJack.Test.csproj", "{532746E4-546E-410C-A125-86A55529FA91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C1E8EF9-8212-409F-8DC2-7CD5831C83FE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C36CF7A2-EEE5-4DC2-A698-FCA395241926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36CF7A2-EEE5-4DC2-A698-FCA395241926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36CF7A2-EEE5-4DC2-A698-FCA395241926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36CF7A2-EEE5-4DC2-A698-FCA395241926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532746E4-546E-410C-A125-86A55529FA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532746E4-546E-410C-A125-86A55529FA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532746E4-546E-410C-A125-86A55529FA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532746E4-546E-410C-A125-86A55529FA91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2CF8EE5-0AC5-437D-81CE-A05A111D8C9D}
+	EndGlobalSection
+EndGlobal

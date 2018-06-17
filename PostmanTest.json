@@ -1,0 +1,109 @@
+{
+	"id": "bac26ed5-e5df-7182-ebb7-f3b031e8446d",
+	"name": "BlackJack",
+	"description": "",
+	"order": [
+		"078d7457-1e4c-8376-4d0c-7f5cafaee0d4",
+		"b351d38f-4531-d8fa-5c3f-ad1b37398ce9",
+		"0a50ff8e-47b6-650d-cc50-65286f281b5d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1529214527776,
+	"owner": "1564926",
+	"public": false,
+	"requests": [
+		{
+			"id": "078d7457-1e4c-8376-4d0c-7f5cafaee0d4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:64755/api/game/initialize",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "bac26ed5-e5df-7182-ebb7-f3b031e8446d",
+			"data": null,
+			"dataMode": "params",
+			"name": "New game",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1529214535470,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"Token\", jsonData[\"token\"]);",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "0a50ff8e-47b6-650d-cc50-65286f281b5d",
+			"headers": "Content-Type: application/json\nX-Token: {{Token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Token",
+					"value": "{{Token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:64755/api/game/stand",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"Token\", jsonData[\"token\"]);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529214725337,
+			"name": "Stand",
+			"description": "",
+			"collectionId": "bac26ed5-e5df-7182-ebb7-f3b031e8446d",
+			"responses": []
+		},
+		{
+			"id": "b351d38f-4531-d8fa-5c3f-ad1b37398ce9",
+			"headers": "Content-Type: application/json\nX-Token: {{Token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Token",
+					"value": "{{Token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:64755/api/game/hit",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"Token\", jsonData[\"token\"]);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529214590828,
+			"name": "Hit",
+			"description": "",
+			"collectionId": "bac26ed5-e5df-7182-ebb7-f3b031e8446d",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
